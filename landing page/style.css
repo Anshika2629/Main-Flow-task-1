@@ -1,0 +1,147 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --text:2rem;
+    --head:calc(1rem + 5vw);
+    --bg-color:#eccc68
+}
+
+
+body{
+    font-family: 'Poppins', sans-serif;;
+}
+
+.rom{
+    min-height: 100vh;
+    background:url('https://brookrest.com/wp-content/uploads/2020/05/AdobeStock_282247995-scaled.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+   z-index:2;
+   
+ 
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10vh;
+    padding: 0rem 1.5rem;
+    color: white;
+
+}
+
+
+.navbar ul{
+    list-style: none;
+}
+
+.navbar ul li{
+    display: inline-block;
+     margin-left: 3rem;
+     font-size: var(--text);
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    color: white;
+
+
+}
+.navbar ul li a:hover{
+    opacity: 0.8;
+    
+    
+
+}
+
+
+.pom{
+color: white;
+height: 90vh;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+animation:slide 1s ease-in-out
+}
+
+
+@keyframes slide{
+    from{
+        transform: translateX(-100%);
+    }to{
+        transform: translateX(-0%);
+    }
+}
+
+.pom::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: black;
+    z-index:-1;
+    top: 0;
+    opacity: 0.6;
+
+}
+
+
+
+.pom a{color: white;
+text-decoration: none;
+background-color:var(--bg-color) ;
+font-weight: 900;
+padding: 0.8rem 1rem;
+font-size: var(--text);
+margin: 0.8 auto;
+display: block;
+transition: opacity 0.1sec linear;
+}
+
+
+.pom a:hover{
+    opacity: 0.8;
+}
+.pom h2{
+    font-size: var(--head);
+}
+
+.pom p{
+    font-size: 3rem;
+}
+
+
+
+
+.explore {
+    word-spacing: 5px;
+    margin: 10px 50px;
+    font-weight: bold;
+    justify-content: center;
+    display: flex;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 70px;
+}
+
+.back-photo {
+    height: 500px;
+    width: 500px;
+    background-position: center;
+    background-size: cover;
+    border-radius: 5px;
+    padding:0.8rem;
+}
+
+.foot{
+    background-color:burlywood;
+   
+}
+
